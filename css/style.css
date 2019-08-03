@@ -441,7 +441,8 @@ a {
             flex-grow: 1;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 333px; }
+    width: 333px;
+    padding-top: 50px; }
   .hit__price-line {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
@@ -475,7 +476,7 @@ a {
     max-width: 350px; }
   .hit__img {
     width: 525px;
-    padding-top: 50px; }
+    padding-top: 0; }
   .hit__price-line {
     max-width: 350px; } }
 
