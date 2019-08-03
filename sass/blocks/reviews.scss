@@ -1,0 +1,142 @@
+.reviews__wrapper {
+  padding: 0 $mobile-padding;
+}
+
+.reviews__title {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__content {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 25px;
+
+  line-height: 30px;
+}
+
+.reviews__author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: $big-text-color;
+}
+
+.reviews__username {
+  display: inline-block;
+  margin-top: 5px;
+
+  font-weight: normal;
+  vertical-align: top;
+  color: $text-color;
+}
+
+.reviews__control {
+  // margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    min-height: 457px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .reviews__wrapper {
+    padding: 0 $tablet-padding;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+
+  }
+
+  .reviews__title {
+    order: 1;
+    width: $tablet-column;
+  }
+
+  .review__slider {
+    order: 3;
+    position: relative;
+  }
+
+  .reviews__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    flex-grow: 1;
+  }
+
+  .reviews__author {
+    width: $tablet-column;
+    outline: 1px dotted green;
+    font-size: 18px;
+  }
+
+  .reviews__control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .reviews__feedback {
+    order: 2;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    // margin: 0 auto;
+    background: none;
+  }
+
+  .reviews__wrapper {
+    padding: 0;
+    padding-left: $desktop-padding;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 475px;
+  }
+
+  .reviews__title {
+    width: $desktop-column;
+  }
+
+  .review__slider {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .review__list {
+    max-width: $desktop-column;
+  }
+
+  .reviews__content {
+    display: block;
+  }
+
+  .reviews__text {
+    min-width: 775px;
+    max-width: 775px;
+  }
+
+  .reviews__control {
+    position: static;
+  }
+}
