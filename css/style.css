@@ -466,7 +466,7 @@ a {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    min-height: 625px; }
+    min-height: 685px; }
   .hit__name {
     width: 350px; }
   .hit__description {
